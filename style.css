@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('https://wallpapersgood.ru/wallpapers/main2/201818/15252885825aea0e868d4312.12083130.jpg');
+    background-size: cover;
+  }
+  
+  .container {
+    position: absolute;
+    background-image: url('R.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 300px;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-3px, 3px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, 2px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes fly {
+    0% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -100vh;
+    }
+  }
+  
+  .rock {
+    animation: shake 0.1s infinite;
+  }
+  
+  .fly {
+    animation: fly 5s;
+    animation-fill-mode: forwards;
+  }
